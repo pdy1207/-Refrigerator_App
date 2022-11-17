@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#FFEEAD"
+    android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="식재료 수정"
+        android:fontFamily="@font/baemin"
+        android:textColor="#90000000"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="품명 : "
+            android:fontFamily="@font/baemin"
+            android:textColor="#90FFAD60"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/dialog_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#95000000"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:hint="텍스트 입력"
+            android:textColor="#95000000"
+            android:textAlignment="center"
+            android:padding="12dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="유통기한 : "
+            android:fontFamily="@font/baemin"
+            android:textColor="#90FFAD60"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    <EditText
+        android:id="@+id/dialog_edit_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="텍스트 입력"
+        android:textColorHint="#95000000"
+        android:ems="12"
+        android:layout_marginLeft="10dp"
+        android:textColor="#95000000"
+        android:textAlignment="center"
+        android:padding="12dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="세부사항 : "
+            android:fontFamily="@font/baemin"
+            android:textColor="#90FFAD60"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    <EditText
+        android:id="@+id/dialog_edit_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#95000000"
+        android:hint="텍스트 입력"
+        android:textColor="#95000000"
+        android:ems="12"
+        android:layout_marginLeft="10dp"
+
+        android:textAlignment="center"
+        android:padding="12dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메모 : "
+            android:fontFamily="@font/baemin"
+            android:textColor="#90FFAD60"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    <EditText
+        android:id="@+id/dialog_edit_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#95000000"
+        android:hint="텍스트 입력"
+        android:textColor="#95000000"
+        android:textAlignment="center"
+        android:ems="12"
+        android:layout_marginLeft="10dp"
+        android:padding="12dp"/>
+    </LinearLayout>
+    <!--android:lines="4" 공백 띄우기-->
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_white"
+        android:fontFamily="@font/baemin"
+        android:textColor="@color/orange"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="20dp"
+        android:text="수정하기"/>
+
+</LinearLayout>

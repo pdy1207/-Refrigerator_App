@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/orange"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_datepicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:backgroundTint="@color/yellow"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/maplestory_light"
+            android:paddingTop="5dp"
+            android:text="일정 체크 🗓"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></Space>
+    <TextView
+        android:id="@+id/textView_month"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:background="#99000000"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:gravity="center"
+        style="@style/styleDy"
+        android:text="2022년 11월" />
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="17sp"
+        app:compactCalendarBackgroundColor="#99000000"
+        app:compactCalendarTextColor="#ffffff"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#FFEEAD"
+        app:compactCalendarCurrentDayBackgroundColor="#B71C1C"
+        app:compactCalendarMultiEventIndicatorColor="#fff"
+        />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView_result"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textAlignment="center"
+        android:background="#90ffffff"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:fontFamily="@font/maplestory_light"
+        android:textSize="17sp"
+        android:hint="일정이 없습니다." />
+</LinearLayout>

@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_datepicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:backgroundTint="@color/yellow"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/baemin"
+        android:paddingTop="5dp"
+        android:text="식재료 추가하기"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18.00sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/maplestory_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2019/01/01" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/maplestory_light"
+        android:gravity="center"
+        android:text="품명"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="음식의 품명을 입력하세요."
+        android:fontFamily="@font/maplestory_light"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:background="@drawable/edittext_corner"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:padding="12dp"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/maplestory_light"
+            android:gravity="center"
+            android:text="수량"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edit_text3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="수량을 입력하세요."
+            android:fontFamily="@font/maplestory_light"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edittext_corner"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:textSize="17dp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/date_picker_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/box_red"
+        android:fontFamily="@font/baemin"
+        android:text="유통기한 정하기"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/maplestory_light"
+            android:gravity="center"
+            tools:text="D-day"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:fontFamily="@font/maplestory_light"
+        android:textColor="@color/black"
+        tools:text="D-day" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+<!--        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/maplestory_light"
+            android:gravity="center"
+            android:text="메모"
+            android:textColor="@color/black" />-->
+
+        <EditText
+            android:id="@+id/edit_text2"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_corner"
+            android:fontFamily="@font/maplestory_light"
+            android:gravity="center"
+            android:hint="메모 작성란입니다."
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_add"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_orange"
+            android:backgroundTint="@color/yellow"
+
+            android:fontFamily="@font/baemin"
+            android:text="물품추가😋"
+            android:textColor="@color/orange"
+            android:textSize="20dp"/>
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/bt_reset"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_orange"
+            android:backgroundTint="@color/yellow"
+            android:fontFamily="@font/baemin"
+            android:text="냉장고 청소"
+            android:textColor="@color/warning"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:listitem="@layout/list_row_main" />
+
+</LinearLayout>

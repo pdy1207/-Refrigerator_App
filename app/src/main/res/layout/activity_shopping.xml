@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FF9100"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_datepicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/maplestory_light"
+            android:paddingTop="5dp"
+            android:text="장 봐야 할 리스트 📃"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="장봐야할 것을 메모해주세요!"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:fontFamily="@font/maplestory_light"
+        android:textColor="@color/white"
+        android:id="@+id/inputShop">
+    </EditText>
+    <Button
+        android:id="@+id/addShop"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/btn_round"
+        android:fontFamily="@font/baemin"
+        android:text="추가하기"
+        android:textColor="@color/orange"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:textAlignment="center"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textColor="@color/black"
+    android:divider="@android:color/black"
+    style="@style/styleDy">
+    <ListView
+        android:id="@+id/checklistview"
+        android:layout_width="252dp"
+        android:layout_height="246dp"
+        android:layout_gravity="center"
+        android:divider="@android:color/black"
+        android:fontFamily="@font/maplestory_light"
+        android:gravity="center"
+        style="@style/styleDy"
+        android:listSelector="#00000000"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        style="@style/styleDy">
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:layout_gravity="bottom"
+            android:visibility="invisible" />
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="15dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
